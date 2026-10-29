@@ -14,15 +14,22 @@ public class OddEvenSum
 		int eveSum = 0; 
 		int oddSum = 0;
 		
-		for(int i = 1; i <= 5; i++){
-		    System.out.println("Enter any Number:");
+		char choice = 'y';
+		
+		while(choice == 'y' || choice == 'Y'){
+		    
+		    System.out.print("Enter a Number of your choice: ");
 		    int userNum = sc.nextInt();
 		    
+		    System.out.println();
 		    if(userNum % 2 == 0){
 		        eveSum += userNum;
 		    }else{
 		        oddSum += userNum;
 		    }
+		    
+		    System.out.print("Do you want to continue adding? Press 'Y' for Yes and 'N' for No: ");
+		    choice = sc.next().charAt(0);
 		}
 		System.out.println("Even Sum: "+ eveSum + " Odd Sum: " + oddSum);
 		sc.close();
