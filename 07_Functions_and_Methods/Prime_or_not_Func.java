@@ -4,7 +4,7 @@ public class Prime_or_not_Func {
             return true;
         }
 
-        for(int i = 2; i < num; i++){
+        for(int i = 2; i <= ((int)Math.sqrt(num)); i++){
             if(num % i == 0){
                 return false;
             }
@@ -13,6 +13,6 @@ public class Prime_or_not_Func {
         return true;
     }
     public static void main(String[] args) {
-        System.out.println(IsPrime(2));
+        System.out.println(IsPrime(12));
     }
 }
