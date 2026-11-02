@@ -2,19 +2,12 @@
 
     public class Factorial_func {
         public static int Factorial(int num){
-            if ( num == 0 || num == 1 || num < 0){
-                if (num < 0){
-                    return -1;
-                }
-                return 1;
-            }else{
-                int fact = 1;
-                while(num > 0){
-                    fact *= num;
-                    num -= 1;
-                }
-                return fact;
+            int f = 1;
+
+            for(int i = 1; i <= num; i++){
+                f *= i;
             }
+            return f;
         }
         public static void main(String[] args) {
             Scanner sc = new Scanner(System.in);
