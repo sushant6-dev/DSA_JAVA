@@ -4,10 +4,7 @@ public class Butterfly_pattern {
             for(int j = 1; j<=i; j++){
                 System.out.print('*');
             }
-            for(int k = 1; k < -i + n + 1; k++){
-                System.out.print(" ");
-            }
-            for(int l = 1; l < -i + n + 1; l++){
+            for(int k = 1; k < 2*(-i + n + 1); k++){
                 System.out.print(" ");
             }
             for(int m = 1; m<=i; m++){
@@ -19,10 +16,7 @@ public class Butterfly_pattern {
             for(int j = 1; j<=i; j++){
                 System.out.print('*');
             }
-            for(int k = 1; k < -i + n + 1; k++){
-                System.out.print(" ");
-            }
-            for(int l = 1; l < -i + n + 1; l++){
+            for(int k = 1; k < 2*(-i + n + 1); k++){
                 System.out.print(" ");
             }
             for(int m = 1; m<=i; m++){
