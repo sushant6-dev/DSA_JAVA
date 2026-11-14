@@ -1,6 +1,7 @@
 public class Bubble_Sort{
     public static void BubbleSort(int arr[]){
         for(int i = 0; i < arr.length - 1; i++){
+            int swap = 0;
             for(int j = 0; j < arr.length - i - 1; j++){
                 if(arr[j] > arr[j+1]){
                     int temp = arr[j];
@@ -8,6 +9,10 @@ public class Bubble_Sort{
                     arr[j+1] = temp;
                     swap++;
                 }
+            }
+            if(swap == 0){
+                System.out.println("Array Already Sorted.");
+                break;
             }
         }
     }
